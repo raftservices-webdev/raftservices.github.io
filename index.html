@@ -10,10 +10,10 @@
       --blue: #4BAED6;
       --blue-light: #7ECDE8;
       --blue-pale: #E8F5FA;
-      --sand: #FAF6F0;
+      --sand: #F7F4EF;
       --warm: #F5EDE0;
-      --text: #2C3A42;
-      --muted: #6B8490;
+      --text: #1E2E36;
+      --muted: #3D5260;
       --white: #FFFFFF;
       --nav-h: 80px;
     }
@@ -90,7 +90,7 @@
     .hero-owl-img { width: 90px; height: 90px; object-fit: contain; filter: drop-shadow(0 8px 24px rgba(75,174,214,0.4)); animation: owlBob 4s ease-in-out infinite; }
     .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 7vw, 5.2rem); font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 10px; animation: floatUp 1s 0.2s ease both; opacity: 0; }
     .hero-title em { font-style: italic; color: var(--blue-light); }
-    .hero-sub { font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 300; color: rgba(255,255,255,0.65); max-width: 560px; margin: 18px auto 38px; line-height: 1.8; animation: floatUp 1s 0.35s ease both; opacity: 0; }
+    .hero-sub { font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 400; color: rgba(255,255,255,0.82); max-width: 560px; margin: 18px auto 38px; line-height: 1.8; animation: floatUp 1s 0.35s ease both; opacity: 0; }
     .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; animation: floatUp 1s 0.5s ease both; opacity: 0; }
     .btn { display: inline-block; padding: 14px 32px; border-radius: 50px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: all 0.3s; cursor: pointer; border: none; }
     .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 8px 30px rgba(75,174,214,0.4); }
@@ -137,8 +137,8 @@
     .profile-avatar { width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--blue-light)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; color: #fff; flex-shrink: 0; }
     .profile-header-text h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
     .profile-header-text p { font-size: 0.78rem; color: var(--blue-light); letter-spacing: 0.1em; text-transform: uppercase; }
-    .profile-body { padding: 26px 30px; }
-    .profile-body p { font-size: 0.88rem; color: var(--muted); line-height: 1.85; font-weight: 300; margin-bottom: 14px; }
+    .profile-body { padding: 26px 30px; background: #fff; }
+    .profile-body p { font-size: 0.88rem; color: var(--muted); line-height: 1.85; font-weight: 400; margin-bottom: 14px; }
     .profile-body p:last-child { margin-bottom: 0; }
 
     .certifications-block { background: var(--blue-pale); border-radius: 14px; padding: 28px 32px; margin-bottom: 50px; border-left: 4px solid var(--blue); }
@@ -149,11 +149,11 @@
     .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .stat-card { text-align: center; padding: 36px 20px; background: linear-gradient(135deg, #000d12 0%, #0d3347 100%); border-radius: 18px; }
     .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--blue-light); line-height: 1; margin-bottom: 8px; }
-    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.5; }
+    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.82); letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.5; }
 
     /* WHAT WE DO */
     #services { background: var(--sand); }
-    .services-intro { font-size: 1rem; color: var(--muted); line-height: 1.9; max-width: 820px; margin-bottom: 48px; font-weight: 300; }
+    .services-intro { font-size: 1rem; color: var(--muted); line-height: 1.9; max-width: 820px; margin-bottom: 48px; font-weight: 400; }
     .services-category-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; color: var(--text); margin-bottom: 28px; padding-bottom: 14px; border-bottom: 1px solid rgba(75,174,214,0.2); }
     .services-category-title em { font-style: italic; color: var(--blue); }
     .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 60px; }
@@ -164,21 +164,21 @@
     .service-icon { width: 48px; height: 48px; background: var(--blue-pale); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 1.4rem; }
     .service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
     .service-card .service-sub { font-size: 0.8rem; color: var(--blue); font-style: italic; margin-bottom: 12px; }
-    .service-card p { font-size: 0.86rem; color: var(--muted); line-height: 1.75; font-weight: 300; }
+    .service-card p { font-size: 0.86rem; color: var(--muted); line-height: 1.75; font-weight: 400; }
 
-    .training-intro { font-size: 0.95rem; color: var(--muted); line-height: 1.9; max-width: 820px; margin-bottom: 32px; font-weight: 300; }
+    .training-intro { font-size: 0.95rem; color: var(--muted); line-height: 1.9; max-width: 820px; margin-bottom: 32px; font-weight: 400; }
     .training-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
     .training-item { background: var(--white); border-radius: 12px; padding: 18px 22px; display: flex; align-items: center; gap: 14px; border: 1px solid rgba(75,174,214,0.1); transition: all 0.25s; }
     .training-item:hover { border-color: var(--blue); background: var(--blue-pale); transform: translateX(4px); }
     .training-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
-    .training-item span { font-size: 0.88rem; color: var(--text); font-weight: 400; }
+    .training-item span { font-size: 0.88rem; color: var(--text); font-weight: 500; }
 
     /* OUR WORK */
     #work { background: var(--white); }
     .work-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px; }
     .work-stat-card { text-align: center; padding: 36px 20px; background: var(--blue-pale); border-radius: 18px; }
     .work-stat-number { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--blue); line-height: 1; margin-bottom: 8px; }
-    .work-stat-label { font-size: 0.8rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; }
+    .work-stat-label { font-size: 0.8rem; color: #3D5260; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; }
 
     .clients-section-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--text); margin-bottom: 28px; }
     .clients-grid { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 60px; }
@@ -199,11 +199,12 @@
     .contact-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 26px; }
     .contact-icon { width: 44px; height: 44px; flex-shrink: 0; background: var(--blue-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
     .contact-item-text h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--blue); margin-bottom: 4px; }
-    .contact-item-text p, .contact-item-text a { font-size: 0.95rem; color: var(--text); text-decoration: none; line-height: 1.6; }
+    .contact-item-text p, .contact-item-text a { font-size: 0.95rem; color: var(--text); text-decoration: none; line-height: 1.6; font-weight: 500; }
     .contact-item-text a:hover { color: var(--blue); }
     .social-row { display: flex; gap: 12px; margin-top: 32px; }
     .social-btn { display: flex; align-items: center; gap: 8px; padding: 10px 18px; background: var(--white); border-radius: 50px; font-size: 0.8rem; font-weight: 500; color: var(--text); text-decoration: none; border: 1px solid rgba(75,174,214,0.2); transition: all 0.25s; letter-spacing: 0.06em; }
     .social-btn:hover { background: var(--blue-pale); border-color: var(--blue); color: var(--blue); }
+    .social-btn svg { flex-shrink: 0; }
     .contact-form-wrap { background: var(--white); border-radius: 20px; padding: 40px 36px; box-shadow: 0 10px 50px rgba(75,174,214,0.08); }
     .contact-form-wrap h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; margin-bottom: 28px; color: var(--text); }
     .form-group { margin-bottom: 18px; }
@@ -475,8 +476,8 @@
       <div class="certifications-block fade-in">
         <h4>Our Certifications &amp; Affiliations</h4>
         <div class="cert-tags">
-          <span class="cert-tag">CBT – Essential Banjara</span>
-          <span class="cert-tag">DCS Banjara</span>
+          <span class="cert-tag">CBT Essentials – Banjara</span>
+          <span class="cert-tag">DCS – Banjara</span>
           <span class="cert-tag">NLP – ECNLP</span>
           <span class="cert-tag">AANLP</span>
           <span class="cert-tag">AAC</span>
@@ -702,9 +703,18 @@
             </div>
           </div>
           <div class="social-row">
-            <a href="#" class="social-btn">in LinkedIn</a>
-            <a href="#" class="social-btn">📷 Instagram</a>
-            <a href="#" class="social-btn">▶ YouTube</a>
+            <a href="https://www.linkedin.com/company/89904725/" target="_blank" rel="noopener" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.instagram.com/raftservices/" target="_blank" rel="noopener" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="url(#igGrad)"><defs><linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="25%" style="stop-color:#e6683c"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="75%" style="stop-color:#cc2366"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.youtube.com/@RaftServices" target="_blank" rel="noopener" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+              YouTube
+            </a>
           </div>
         </div>
         <div class="contact-form-wrap fade-in">
