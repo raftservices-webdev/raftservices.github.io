@@ -79,6 +79,20 @@
       justify-content: center; align-items: center; text-align: center;
       padding: calc(var(--nav-h) + 60px) 5% 80px; position: relative; overflow: hidden;
     }
+    /* WORKSHOP BANNER */
+    .workshop-banner {
+      display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+      gap: 12px; padding: 10px 20px;
+      background: linear-gradient(90deg, rgba(74,184,232,0.15), rgba(74,184,232,0.08), rgba(74,184,232,0.15));
+      border-bottom: 1px solid rgba(74,184,232,0.25);
+      text-decoration: none; position: relative; z-index: 999;
+      margin-top: 72px; transition: background 0.3s;
+    }
+    .workshop-banner:hover { background: linear-gradient(90deg, rgba(74,184,232,0.25), rgba(74,184,232,0.15), rgba(74,184,232,0.25)); }
+    .workshop-banner-tag { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); font-weight: 600; }
+    .workshop-banner-text { font-size: 0.8rem; color: rgba(255,255,255,0.8); font-family: 'Jost', sans-serif; }
+    .workshop-banner-cta { font-size: 0.75rem; font-weight: 600; color: var(--blue); letter-spacing: 0.08em; white-space: nowrap; }
+
     .hero-bg-circles { position: absolute; inset: 0; pointer-events: none; }
     .hero-bg-circles span { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(75,174,214,0.12) 0%, transparent 70%); }
     .hero-bg-circles span:nth-child(1) { width: 600px; height: 600px; top: -100px; right: -100px; }
@@ -397,6 +411,13 @@
       <span></span><span></span><span></span>
     </div>
   </nav>
+
+  <!-- WORKSHOP BANNER -->
+  <a href="/workshops/stress_management" class="workshop-banner">
+    <span class="workshop-banner-tag">✦ Upcoming Workshop</span>
+    <span class="workshop-banner-text">Managing Stress &nbsp;·&nbsp; 9th May 2025 &nbsp;·&nbsp; Langford Town, Bangalore</span>
+    <span class="workshop-banner-cta">Register Now →</span>
+  </a>
 
   <!-- HOME -->
   <section id="home">
